@@ -32,9 +32,9 @@ The system will:
 
 | Member | Role | Responsibilities |
 |---|---|---|
-| Caleb McMullin | TBD | TBD |
-| Emily Velasco | TBD | TBD |
-| Bryan Zavala | TBD | TBD |
+| Caleb McMullin | Algorithm & Optimization Lead | TBD |
+| Emily Velasco | Product & Quality Lead | TBD |
+| Bryan Zavala | Data & Matching Lead | TBD |
 
 Suggested team roles:
 
