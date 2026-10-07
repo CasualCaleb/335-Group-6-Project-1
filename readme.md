@@ -33,8 +33,8 @@ The system will:
 | Member | Role | Responsibilities |
 |---|---|---|
 | Caleb McMullin | TBD | TBD |
-| Team Member 2 | TBD | TBD |
-| Team Member 3 | TBD | TBD |
+| Emily Velasco | TBD | TBD |
+| Bryan Zavala | TBD | TBD |
 
 Suggested team roles:
 
