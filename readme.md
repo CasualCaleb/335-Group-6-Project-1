@@ -2,7 +2,7 @@
 
 **CPSC 335 — Algorithms and Data Structures**
 
-RescueRoute is an explainable Python application for matching time-sensitive surplus food donations with compatible community organizations and volunteer drivers.
+RescueRoute is a Python application for matching time-sensitive surplus food donations with compatible community organizations and volunteer drivers.
 
 The project compares a **FIFO baseline** with a **greedy urgency-first strategy** and explains why each donation was assigned, deferred, or left unmatched.
 
