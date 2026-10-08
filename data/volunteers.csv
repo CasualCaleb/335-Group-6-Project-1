@@ -1,0 +1,7 @@
+volunteer_id,vehicle_capacity_kg,area,availability_start,availability_end,max_pickups
+V001,50,West Covina,08:00,13:00,3
+V002,25,Covina,09:00,15:00,2
+V003,35,Azusa,10:00,17:00,3
+V004,40,Baldwin Park,11:00,19:00,2
+V005,30,Glendora,08:00,16:00,2
+V006,60,West Covina,12:00,20:00,4

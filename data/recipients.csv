@@ -1,0 +1,7 @@
+recipient_id,organization_name,accepted_food_types,capacity_kg,area,closing_time
+R001,West Covina Food Bank,Produce;Bakery;Canned Goods,60,West Covina,17:00
+R002,Covina Community Shelter,Bakery;Prepared Meals,35,Covina,18:00
+R003,Azusa Family Center,Produce;Dairy,40,Azusa,16:30
+R004,Baldwin Park Outreach,Prepared Meals;Canned Goods,50,Baldwin Park,19:00
+R005,Glendora Food Pantry,Dairy;Produce,30,Glendora,17:30
+R006,East Valley Community Center,Canned Goods;Bakery;Produce,45,West Covina,18:00

@@ -1,0 +1,7 @@
+donation_id,donor_name,food_type,quantity_kg,expiry_date,pickup_area,ready_time
+D001,Fresh Market,Produce,25,2026-10-10,West Covina,09:00
+D002,Sunrise Bakery,Bakery,12,2026-10-09,Covina,10:00
+D003,Green Grocer,Produce,18,2026-10-11,Azusa,11:30
+D004,Community Kitchen,Prepared Meals,30,2026-10-08,Baldwin Park,12:00
+D005,Valley Dairy,Dairy,15,2026-10-13,Glendora,08:30
+D006,Neighborhood Pantry,Canned Goods,40,2027-03-01,West Covina,14:00
