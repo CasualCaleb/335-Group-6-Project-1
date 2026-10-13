@@ -6,10 +6,6 @@ RescueRoute is a Python application for matching time-sensitive surplus food don
 
 The project compares a **FIFO baseline** with a **greedy urgency-first strategy** and explains why each donation was assigned, deferred, or left unmatched.
 
-> **Academic project disclaimer:** RescueRoute is an educational prototype. It is not a production food-safety, medical, emergency-response, or certified routing system. Unless otherwise documented, all project data is simulated.
-
----
-
 ## Project Goals
 
 RescueRoute is designed to answer the following question:
@@ -30,19 +26,11 @@ The system will:
 
 ## Team Members
 
-| Member | Role | Responsibilities |
-|---|---|---|
-| Caleb McMullin | Algorithm & Optimization Lead | TBD |
-| Emily Velasco | Product & Quality Lead | TBD |
-| Bryan Zavala | Data & Matching Lead | TBD |
-
-Suggested team roles:
-
-- **Algorithm & Optimization Lead** — FIFO scheduler, greedy strategy, priority selection, complexity analysis, and strategy comparison.
-- **Data & Matching Lead** — input files, validation, compatibility checks, capacity rules, data structures, and test data.
-- **Product & Quality Lead** — explainable output, metrics, automated tests, README, demo materials, and interface polish.
-
-All team members are expected to participate in design discussions, debugging, testing, code review, documentation, and the final presentation.
+| Member | Role |
+|---|---|
+| Caleb McMullin | Algorithm & Optimization Lead |
+| Emily Velasco | Product & Quality Lead |
+| Bryan Zavala | Data & Matching Lead |
 
 ---
 
@@ -95,8 +83,6 @@ Minimum information:
 ---
 
 ## Algorithms
-
-RescueRoute compares two scheduling approaches using the **same input data**.
 
 ### 1. FIFO Baseline
 
@@ -248,50 +234,6 @@ The application will report metrics including:
 - FIFO vs. greedy comparison
 
 The comparison will help determine whether urgency-based scheduling improves outcomes over simple FIFO ordering.
-
----
-
-## Project Structure
-
-A possible project structure is:
-
-```text
-RescueRoute/
-├── data/
-│   ├── donations.csv
-│   ├── recipients.csv
-│   └── volunteers.csv
-│
-├── src/
-│   ├── __init__.py
-│   ├── main.py
-│   ├── models.py
-│   ├── loader.py
-│   ├── validation.py
-│   ├── matching.py
-│   ├── fifo.py
-│   ├── greedy.py
-│   ├── metrics.py
-│   └── explanations.py
-│
-├── tests/
-│   ├── test_validation.py
-│   ├── test_fifo.py
-│   ├── test_greedy.py
-│   ├── test_matching.py
-│   └── test_metrics.py
-│
-├── docs/
-│   └── ...
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
-
-The final structure may change as the implementation develops.
-
----
 
 ## Installation
 
@@ -479,66 +421,6 @@ fix/capacity-check
 
 ---
 
-## Team Contributions
-
-Final contributions will be documented here before submission.
-
-### Caleb McMullin
-
-- TBD
-
-### Team Member 2
-
-- TBD
-
-### Team Member 3
-
-- TBD
-
----
-
-## Optional Stretch Features
-
-Stretch features should only be considered after the required system is working correctly.
-
-Possible additions include:
-
-- Streamlit dashboard
-- Simulated map distances
-- Fairness rules
-- Route planning
-- What-if analysis
-- Constraint-optimization comparison
-
----
-
-## Final Deliverables
-
-The completed project will include:
-
-- GitHub repository
-- Runnable Python application
-- Sample CSV or JSON input files
-- FIFO scheduling implementation
-- Greedy urgency-first scheduling implementation
-- Explainable assignment and failure output
-- Automated test suite
-- Metrics and FIFO-vs.-greedy comparison
-- Architecture and complexity documentation
-- Limitations and trade-off discussion
-- Team contribution statements
-- 3–5 minute demo video or live demonstration
-
----
-
 ## Course
 
 **CPSC 335 — Algorithms and Data Structures**
-
-**Group Project: RescueRoute**
-
----
-
-## License
-
-This project is intended for educational use as part of CPSC 335.
