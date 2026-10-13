@@ -1,6 +1,5 @@
 from datetime import date
-
-from matching import find_match
+from rescueroute.matching import find_match
 
 def _schedule(ordered_donations, recipients, volunteers, schedule_date, strategy):
     if not isinstance(schedule_date, date):

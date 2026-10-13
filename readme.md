@@ -37,9 +37,9 @@ The project uses dictionaries for capacity and pickup tracking, sets for compati
 ## Project files
 
 - `main.py` — runs both algorithms
-- `data_loader.py` / `validation.py` — loads and checks CSV data
-- `matching.py` — finds feasible matches
-- `scheduler.py` — FIFO and greedy scheduling
+- `rescueroute/data_loader.py` / `rescueroute/validation.py` — loads and checks CSV data
+- `rescueroute/matching.py` — finds feasible matches
+- `rescueroute/scheduler.py` — FIFO and greedy scheduling
 - `data/` — sample CSV files
 - `tests/` — automated tests
 

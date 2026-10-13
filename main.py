@@ -2,9 +2,9 @@ import argparse
 import os
 from datetime import date
 from pathlib import Path
-from data_loader import load_donations, load_recipients, load_volunteers
-from scheduler import schedule_fifo, schedule_greedy
-from validation import validate_data
+from rescueroute.data_loader import load_donations, load_recipients, load_volunteers
+from rescueroute.scheduler import schedule_fifo, schedule_greedy
+from rescueroute.validation import validate_data
 
 # Keep the demonstration reproducible regardless of the current calendar date.
 DEFAULT_PLANNING_DATE = date(2026, 10, 8)

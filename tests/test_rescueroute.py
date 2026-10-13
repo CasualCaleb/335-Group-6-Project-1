@@ -1,8 +1,8 @@
 from datetime import date, time
 import pytest
-from matching import find_match
-from scheduler import schedule_fifo, schedule_greedy
-from validation import validate_data
+from rescueroute.matching import find_match
+from rescueroute.scheduler import schedule_fifo, schedule_greedy
+from rescueroute.validation import validate_data
 
 PLANNING_DATE = date(2026, 10, 8)
 
@@ -50,7 +50,7 @@ def test_normal_match():
 def test_duplicate_donation_id_is_rejected():
     donations, recipients, volunteers = example_data()
     # The validator must reject duplicate IDs on raw input.
-    from validation import validate_donations
+    from rescueroute.validation import validate_donations
     raw = [dict(donations[0], expiry_date='2026-10-10', ready_time='09:00')]
     with pytest.raises(ValueError, match='duplicate'):
         validate_donations(raw + [dict(raw[0])])
