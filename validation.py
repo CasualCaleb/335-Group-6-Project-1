@@ -6,7 +6,6 @@ def _required(row, field, kind, row_number):
         raise ValueError(f"{kind} row {row_number}: missing {field}")
     return str(value).strip()
 
-
 def _positive_number(row, field, kind, row_number):
     raw = _required(row, field, kind, row_number)
     try:
@@ -17,7 +16,6 @@ def _positive_number(row, field, kind, row_number):
         raise ValueError(f"{kind} row {row_number}: {field} must be a finite positive number")
     return value
 
-
 def _nonnegative_integer(row, field, kind, row_number):
     raw = _required(row, field, kind, row_number)
     try:
@@ -27,7 +25,6 @@ def _nonnegative_integer(row, field, kind, row_number):
     if value < 0:
         raise ValueError(f"{kind} row {row_number}: {field} cannot be negative")
     return value
-
 
 def _time(row, field, kind, row_number):
     raw = _required(row, field, kind, row_number)
@@ -43,7 +40,6 @@ def _unique_id(row, field, seen, kind, row_number):
         raise ValueError(f"{kind} row {row_number}: duplicate {field} {identifier}")
     seen.add(identifier)
     return identifier
-
 
 def validate_donations(records):
     results, seen = [], set()
@@ -62,7 +58,6 @@ def validate_donations(records):
         results.append(donation)
     return results
 
-
 def validate_recipients(records):
     results, seen = [], set()
     for number, row in enumerate(records, 1):
@@ -79,7 +74,6 @@ def validate_recipients(records):
         results.append(recipient)
     return results
 
-
 def validate_volunteers(records):
     results, seen = [], set()
     for number, row in enumerate(records, 1):
@@ -94,7 +88,6 @@ def validate_volunteers(records):
             raise ValueError(f"Volunteer row {number}: availability_end must follow availability_start")
         results.append(volunteer)
     return results
-
 
 def validate_data(donations, recipients, volunteers):
     return (
