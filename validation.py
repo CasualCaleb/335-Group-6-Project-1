@@ -1,7 +1,4 @@
-"""Validate and normalize RescueRoute CSV records before scheduling."""
-
 from datetime import date, datetime, time
-
 
 def _required(row, field, kind, row_number):
     value = row.get(field)
@@ -49,7 +46,6 @@ def _unique_id(row, field, seen, kind, row_number):
 
 
 def validate_donations(records):
-    """Return copies with quantity_kg as float, expiry_date as date, ready_time as time."""
     results, seen = [], set()
     for number, row in enumerate(records, 1):
         donation = dict(row)
@@ -68,7 +64,6 @@ def validate_donations(records):
 
 
 def validate_recipients(records):
-    """Return copies with accepted_food_types as set and capacity_kg as float."""
     results, seen = [], set()
     for number, row in enumerate(records, 1):
         recipient = dict(row)
@@ -86,7 +81,6 @@ def validate_recipients(records):
 
 
 def validate_volunteers(records):
-    """Return copies with vehicle capacity as float and max_pickups as int."""
     results, seen = [], set()
     for number, row in enumerate(records, 1):
         volunteer = dict(row)
@@ -103,7 +97,6 @@ def validate_volunteers(records):
 
 
 def validate_data(donations, recipients, volunteers):
-    """Validate all datasets and return (donations, recipients, volunteers)."""
     return (
         validate_donations(donations),
         validate_recipients(recipients),
