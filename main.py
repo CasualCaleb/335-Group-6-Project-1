@@ -2,9 +2,10 @@ import argparse
 import os
 from datetime import date
 from pathlib import Path
-from rescueroute.data_loader import load_donations, load_recipients, load_volunteers
+from rescueroute.data_loader import (load_donations, load_recipients, load_volunteers)
 from rescueroute.scheduler import schedule_fifo, schedule_greedy
 from rescueroute.validation import validate_data
+from rescueroute.metrics import (calculate_metrics, compare_strategies, display_metrics, display_comparison)
 
 # Keep the demonstration reproducible regardless of the current calendar date.
 DEFAULT_PLANNING_DATE = date(2026, 10, 8)
@@ -57,10 +58,18 @@ def main():
     fifo = schedule_fifo(donations, recipients, volunteers, args.date)
     greedy = schedule_greedy(donations, recipients, volunteers, args.date)
 
-    display_results('FIFO — Input / arrival order', fifo)
-    display_results('GREEDY — Earliest expiry, largest quantity, earliest ready time', greedy)
+    fifo_metrics = calculate_metrics(donations, recipients, volunteers, fifo)
+    greedy_metrics = calculate_metrics(donations, recipients, volunteers, greedy)
+
+    display_metrics('FIFO PREFORMANCE METRICS', fifo_metrics)
+    display_metrics('GREEDY PREFORMANCE METRICS', greedy_metrics)
+
+    comparison = compare_strategies(fifo_metrics, greedy_metrics)
+
+    display_comparison(comparison)
 
     print('\nNote: detailed metrics and strategy comparison are planned for metrics.py.')
 
 if __name__ == '__main__':
     main()
+
