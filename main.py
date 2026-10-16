@@ -58,6 +58,9 @@ def main():
     fifo = schedule_fifo(donations, recipients, volunteers, args.date)
     greedy = schedule_greedy(donations, recipients, volunteers, args.date)
 
+    display_results('FIFO — Input / arrival order', fifo)
+    display_results('GREEDY — Earliest expiry, largest quantity, earliest ready time', greedy)
+
     fifo_metrics = calculate_metrics(donations, recipients, volunteers, fifo)
     greedy_metrics = calculate_metrics(donations, recipients, volunteers, greedy)
 
