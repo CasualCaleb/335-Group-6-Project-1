@@ -43,8 +43,12 @@ The project uses dictionaries for capacity and pickup tracking, sets for compati
 - `data/` — sample CSV files
 - `tests/` — automated tests
 
-## Team
+## Team and Contributions
 
 - **Caleb McMullin** — Algorithm & Optimization Lead
 - **Emily Velasco** — Product & Quality Lead
+  - established and organized files and folders for initial project structure 
+  - developed data_loader.py to input CSV files and load content
+  - created sample data in CSV files for donations, recipients, and volunteers
+  - verified overall integration of code and reworked README.md
 - **Bryan Zavala** — Data & Matching Lead
