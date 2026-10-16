@@ -71,8 +71,6 @@ def main():
 
     display_comparison(comparison)
 
-    print('\nNote: detailed metrics and strategy comparison are planned for metrics.py.')
-
 if __name__ == '__main__':
     main()
 
